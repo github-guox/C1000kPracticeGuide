@@ -6,7 +6,7 @@ Document:
 
  
 
-**For details, please refer to the original link. **<br/>
+**For details, please refer to the original link. ** <br/>
 
 https://github.com/xiaojiaqi/C1000kPracticeGuide 
 
@@ -20,36 +20,36 @@ https://github.com/xiaojiaqi/C1000kPracticeGuide
 
 ```markdown
 cppserver
-├── Debug ``# 
-│   ├── src ``#  
+├── Debug 
+│   ├── src 
 │   │   ├── subdir.mk
-│   ├── objects.mk ``# 
-│   ├── sources.mk ``# 
-│   └── makefile ``# 
-├── Release ``# 
-│   ├── src ``# 
+│   ├── objects.mk 
+│   ├── sources.mk 
+│   └── makefile 
+├── Release 
+│   ├── src 
 │   │   ├── subdir.mk
-│   ├── objects.mk ``# 
-│   ├── sources.mk ``# 
-│   └── makefile ``# 
-├── doc ``# 
-│   └── protocol.txt ``# 
+│   ├── objects.mk 
+│   ├── sources.mk 
+│   └── makefile  
+├── doc 
+│   └── protocol.txt 
 └── src
-		├── client.cc
-		├── listenfd.cc
-		├── main.cc
-		├── main_event.cc
-		├── main_event.h
-		├── network.cc
-		├── network.h
-		├── socket_util.cc
-		├── socket_util.h
-		├── timers.cc
-		├── timers.h
-		└── worker.cc
+    ├── client.cc
+    ├── listenfd.cc
+    ├── main.cc
+    ├── main_event.cc
+    ├── main_event.h
+    ├── network.cc
+    ├── network.h
+    ├── socket_util.cc
+    ├── socket_util.h
+    ├── timers.cc
+    ├── timers.h
+    └── worker.cc
 ```
 
-  
+****
 
 #### 代码分析
 
@@ -94,6 +94,8 @@ cppserver
 <code body>
 #endif
 ```
+
+****
 
 ##### network.cc
 
@@ -156,6 +158,8 @@ reference url: <br/>
 
 - https://www.cnblogs.com/charley_yang/archive/2010/12/15/1907384.html
 
+****
+
 ##### time.h
 
 ```c++
@@ -209,9 +213,10 @@ class timer_link {
    - 只有被声明为const的成员函数才能被一个const类对象调用
    - 在类体之外定义const成员函数时，还必须加上const关键字
    - **若将成员成员函数声明为const，则该函数不允许修改类的数据成员**
-
-   - 如果据成员是指针，**则const成员函数并不能保证不修改指针指向的对象**，编译器不会把这种修改检测为错误。
+- 如果据成员是指针，**则const成员函数并不能保证不修改指针指向的对象**，编译器不会把这种修改检测为错误。
    - const成员函数可以被具有相同参数列表的非const成员**函数重载**。在这种情况下，类对象的常量性决定调用哪个函数。
+
+****
 
 ##### time.cc
 
@@ -378,6 +383,7 @@ time_value timer_link::get_mintimer() const {
 }
 ```
 
+****
 
 
 
@@ -398,9 +404,8 @@ time_value timer_link::get_mintimer() const {
 
 
 
-*****
 
-### epoll模型
+
 
 
 
