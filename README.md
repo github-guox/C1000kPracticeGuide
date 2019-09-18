@@ -6,7 +6,7 @@ Document:
 
  
 
-**For details, please refer to the original link. ** <br/>
+**For details, please refer to the original link.**  <br/>
 
 https://github.com/xiaojiaqi/C1000kPracticeGuide 
 
